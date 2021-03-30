@@ -61,6 +61,16 @@
             display: table;
             clear: both;
         }
+        input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #aec624;
+  background: #f9f502;
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
 
     </style>
     
@@ -119,7 +129,7 @@
              </ul> 
              <p style="text-align: center;"> <b>Additional Skills</b></p>
              <ul style="list-style:none;">
-                <li>Project Management &emsp;<input type="range" min="1" max="100" value="75" class="slider" id="jsrange" style="background-color: yellow;" ></li>
+                <li>Project Management &emsp;<input type="range" min="1" max="100" value="75" class="slider" id="jsrange"  ></li>
                 <li>Recruitment &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="40" class="slider" id="cssrange"></li>
                 <li>Business Development &thinsp;&thinsp;<input type="range" min="1" max="100" value="60" class="slider" id="htmlrange"></li>
                 <li>Editing&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="range" min="1" max="100" value="27" class="slider" id="reactrange"></li>
