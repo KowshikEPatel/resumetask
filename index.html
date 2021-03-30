@@ -26,8 +26,24 @@
         .columns1{
             float:left;
             width: 45%;
-            padding: 60px;
+            padding-top: 18px;
+            padding-right: 50px;
+            padding-bottom: 3px;
+            padding-left: 50px;
             height: 260px;
+            box-sizing: border-box;
+            border-right-style: solid;
+            border-color: black;
+            
+        }
+        .columnsleft1{
+            float:left;
+            width: 45%;
+            padding-top: 18px;
+            padding-right: 50px;
+            padding-bottom: 18px;
+            padding-left: 50px;
+            height: 480px;
             box-sizing: border-box;
             border-right-style: solid;
             border-color: black;
@@ -35,8 +51,8 @@
         }
         .columns2{
             float: right;
-            width: 51%;
-            padding: 60px;
+            width: 47%;
+            padding: 47px;
             height: 260px;
             box-sizing: border-box;
         }
@@ -89,47 +105,80 @@
               
         </div>
 
-        <div class="columns1" style="background-color:white;">
+        <div class="columnsleft1" style="background-color:white;">
             <h2><i class="fa fa-cogs" aria-hidden="true"></i>&emsp;Skills</h2>
              <p style="text-align: center;"> <b>Technical Skills</b></p>  
-             <ul>
+             <ul style="list-style:none;">
                  <li>Javascript &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="75" class="slider" id="jsrange"></li>
-                 <li>CSS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="40" class="slider" id="cssrange"></li>
-                 <li>HTML &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="60" class="slider" id="cssrange"></li>
-                 <li>REACT &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="27" class="slider" id="cssrange"></li>
-                 <li>REDUX &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="17" class="slider" id="cssrange"></li>
-
-             </ul>     redux mongo deployment 
-additional skills project management recruitment business development editing fundraising
+                 <li>CSS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="range" min="1" max="100" value="40" class="slider" id="cssrange"></li>
+                 <li>HTML &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="range" min="1" max="100" value="60" class="slider" id="htmlrange"></li>
+                 <li>REACT &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;<input type="range" min="1" max="100" value="27" class="slider" id="reactrange"></li>
+                 <li>REDUX &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;<input type="range" min="1" max="100" value="17" class="slider" id="reduxrange"></li>
+                 <li>Mongo &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;<input type="range" min="1" max="100" value="42" class="slider" id="mondorange"></li>
+                 <li>Deployment &emsp;&emsp;&emsp;&ensp;&thinsp;<input type="range" min="1" max="100" value="52" class="slider" id="deploymentrange"></li>
+             </ul> 
+             <p style="text-align: center;"> <b>Additional Skills</b></p>
+             <ul style="list-style:none;">
+                <li>Project Management &emsp;<input type="range" min="1" max="100" value="75" class="slider" id="jsrange" style="background-color: yellow;" ></li>
+                <li>Recruitment &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="40" class="slider" id="cssrange"></li>
+                <li>Business Development &thinsp;&thinsp;<input type="range" min="1" max="100" value="60" class="slider" id="htmlrange"></li>
+                <li>Editing&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;<input type="range" min="1" max="100" value="27" class="slider" id="reactrange"></li>
+                <li>Fundraising &emsp;&emsp;&emsp;&emsp;&emsp;<input type="range" min="1" max="100" value="17" class="slider" id="reduxrange"></li>
+            </ul>        
+     
           </div>
-        
-        
+          <div class="columns2" style="background-color:white;">
+            <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> &emsp;Education</h2>
+            <table>
+                <tr>
+                    <td><b>Engineering Immersion <br>Program</b></td><td style="text-align:right">       11/2018-06/2018</td>
+                </tr>
+                <tr><td>Thinkful, Chicago,IL           </td></tr>
+            </table>
+            <p>Project focused intensive program with emphasis on Mongo, Express, React, amd Javascript (MERN) technical stack.</p>
+             
+            <ul style="list-style:disc;">
+                <li>Developed a full- stack web application, RenewU, using React that aloows users to explore various aspects of meditation. User's progress is stored on a backend created using Node and MondoDB.</li>
+                <li>Developed a langauge learning app, "Foodie Phonetics" using spaced repition and a linked list data structure. React was used to create the front end components while Node and Mongo were used to create a backend that stores user data.</li>
+                <li>Developed a concierge app,"Pley", for individuals looking for curated suggestions when visiting a new place. React was used to develop the fromt end which includes real-time chat, drag and drop and variety of advanced features. The backend, built using Node, Express and Mongo, takes advantage of well developed RESTful API, Geospatial searching, and user authentication with JWT.</li>
+            </ul>
+            <table>
+                <tr>
+                    <td><b>BA, English</b></td><td style="text-align:right">       09/2001 - 09/2005</td>
+                </tr>
+                <tr><td>University of California, Los Angeles</td></tr>
+            </table>     
+          </div>
+
+          <div class="columns1" style="background-color:white;">
+            <h2><i class="fa fa-suitcase" aria-hidden="true"></i> &emsp;Work Experience</h2>
+            <table>
+                <tr>
+                    <td><b>Event Manager</b></td><td style="text-align:right">       03/2014 - 02/2017</td>
+                </tr>
+                <tr><td>C3 Presents, Washington DC</td></tr>
+            </table>
+            <ul style="list-style:disc;">
+                <li>Lead and execute all phases of event planning and production spanning committee recruiment, training, vendor relationships and on-site facilitation.</li>
+                <li>Brought new business to the organisation through relentless networking and stewardship which heloed the company win the bid for the State Department Summit on the Middle East and the companies largest civic event to date, the United State of Women.</li>
+                <li>Exercise fiscal control over budget creation, tracking and reproting. collaborate with employees at all organizational levels to advance cohesive operations.</li>
+            </ul>
+            </div>
       </div>
-
-
 </body>
 </html>
 
 
 
-work experience 
-event manager   03/2014 - 02/2017
-C3 Presents, Washington DC
-Lead and execute all phases of event planning and production spanning committee recruiment, training, vendor relationships and on-site facilitation
-Brought new business to the organisation through relentless networking and stewardship which heloed the company win the bid for the State Department Summit on the Middle East and the companies
-largest civic event to date, the United State of Women 
-Exercise fiscal control over budget creation, tracking and reproting. collaborate with employees at all organizational levels to advance cohesive operations.
+ 
+   
 
 
-Education
-Engineering Immersion Program 11/2018-06/2018
-Thinkful, Chicago,IL
-Project focused intensive program with emphasis on Mongo, Express, React, amd Javascript (MERN) technical stack.
-Developed a full- stack web application, RenewU, using React that aloows users to explore various aspects of meditation. User's progress is stored on a backend created using Node and MondoDB.
-Developed a langauge learning app, "Foodie Phonetics" using spaced repition and a linked list data structure. React was used to create the front end components while Node and Mongo were used to create a backend that stores user data.
-Developed a concierge app,"Pley", for individuals looking for curated suggestions when visiting a new place. React was used to develop the fromt end which includes real-time chat, drag and drop and variety of advanced features. The backend, built using Node, Express and Mongo, takes advantage of well developed RESTful API, Geospatial searching, and user authentication with JWT.
 
-BA, English 09/2001 - 09/2005
-University of California, Los Angeles
+ 
+
+
+
+
 
 
